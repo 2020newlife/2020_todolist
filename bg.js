@@ -1,0 +1,30 @@
+const body = document.querySelector("body");
+
+//image download -> unsplash >> landscape
+//color -> https://flatuicolors.com/
+
+const IMG_NUMBER = 12
+
+function handleImgLoad(){
+    console.log('finished loading');
+}
+
+function paintImage(imgNumber){
+    const image = new Image();
+    image.src = `images/${imgNumber + 1}.jpg`;
+    //image.addEventListener("loadend", handleImgLoad)
+    image.classList.add("bgImage"); 
+    body.prepend(image);
+}
+
+function genRandom(){
+    const number = Math.floor(Math.random() * 12);
+    return number;
+}
+
+function init(){
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+}
+
+init();
