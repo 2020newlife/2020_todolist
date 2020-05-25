@@ -1,9 +1,11 @@
 body{
-    color: #2c3e50;
-}
+    color: white;
+    font-weight: bold;
+ }
 
 .form,
-.greeting{
+.greeting,
+.query{
     display: none;
 }
 
@@ -32,3 +34,46 @@ body{
     z-index:-1;
     animation: fadeIn 0.5s linear;
 }
+
+
+.js-greeting{
+    text-align: center;
+    font-size:50px;
+    border-bottom: 1px solid white;
+    margin-top: 5px
+}
+
+.js-toDoList{   
+    width: 200px;
+    margin: 0 auto;
+    font-size:25px;
+    font-weight:bold;
+    margin-top:10px
+    
+}
+
+.js-toDoForm,
+.js-form{
+    width: 200px;
+    margin: 0 auto;
+}   
+
+.js-clock{
+    text-align: center;
+    font-size:50px;
+    font-weight: 700px;
+    height: 120px;
+}
+
+
+
+.queryToDos,
+.queryName{
+    text-align: center;
+    font-size: 40px;
+    height: 30px;
+    margin-top: 0;
+}
+
+
+
